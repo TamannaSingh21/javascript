@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <form>
+        <label for="number1">Number1</label>
+        <input type="number" placeholder="number1" id="number1" class="button" /><br />
+        <label for="number2">Number2</label>
+        <input type="number" placeholder="number2" id="number2" class="button" /><br />
+        <input type="button" onclick="calculator('add')" class="button" value="Addition" />
+        <input type="button" onclick="calculator('sub')" class="button" value="Subtraction" />
+        <input type="button" onclick="calculator('div')" class="button" value="Division" />
+        <input type="button" onclick="calculator('mul')" class="button" value="Multiplication" />
+        <div id="result">Result: <span id="output"></span></div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
